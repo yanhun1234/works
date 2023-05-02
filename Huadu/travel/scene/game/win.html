@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>结束</title>
+    <style>
+        /* 设置页面全屏 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        /* 设定背景颜色和渐变 */
+        body {
+            background-color: #4c4c4c;
+            background-image: linear-gradient(180deg, rgba(202, 202, 202, 1) 20%, rgba(255, 255, 255, 1) 90%);
+        }
+        
+        /* 定义并设置第一个圆形的样式 */
+        #circle1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 25px solid rgba(255, 255, 255, 0.3);
+            border-top: 25px solid #ffc107;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            animation: rotate 2s linear infinite;
+        }
+        
+        /* 定义并设置第二个圆形的样式 */
+        #circle2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 25px solid rgba(255, 255, 255, 0.3);
+            border-top: 25px solid #ffc107;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            animation: rotate-alt 2s linear infinite;
+        }
+        
+        /* 定义并设置显示“VICTORY”文字的样式 */
+        #victory {
+            font-size: 8em;
+            color: #ffc107;
+            text-shadow: 4px 4px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fade-in .5s ease-out 1s forwards;
+        }
+        
+        /* 定义旋转动画 */
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(405deg);
+            }
+        }
+        
+        @keyframes rotate-alt {
+            from {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(-405deg);
+            }
+        }
+        
+        /* 定义渐变出现动画 */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+    <div id="victory">互动结束</div>
+</body>
+</html>
