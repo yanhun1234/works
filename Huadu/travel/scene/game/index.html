@@ -105,14 +105,56 @@
           <label class="form-check-label" for="question3-option3">舞狮</label>
         </div>
       </div>
-
-      <a href="https://yanhun1234.github.io/works/Huadu/travel/scene/game/win.html" target="_blank">提交我的答案</a>
+      <button>完成</button>
     </form>
   </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="jquery/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 获取提交按钮元素
+    const submitButton = document.querySelector("button[type='submit']");
+
+    // 给按钮添加点击事件监听
+    submitButton.addEventListener("click", function (event) {
+      // 阻止表单自动提交行为
+      event.preventDefault();
+
+      // 弹出恭喜您完成的模态框
+      const modal = document.createElement("div");
+      modal.classList.add("modal", "fade", "show");
+      modal.innerHTML = `
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">恭喜您完成答题</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          您已完成所有题目，请前往链接领取奖励！
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+          <a href="https://works/Huadu/travel/scene/game/win.html" target="_blank" class="btn btn-primary">领取奖励</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+  `;
+
+      // 添加到body元素中
+      document.body.appendChild(modal);
+
+      // 注册模态框隐藏动画结束事件，完成后删除模态框和遮罩层
+      modal.addEventListener("hidden.bs.modal", function (event) {
+        modal.remove();
+        document.querySelector(".modal-backdrop").remove();
+      });
+    });
+  </script>
 </body>
 
 </html>
