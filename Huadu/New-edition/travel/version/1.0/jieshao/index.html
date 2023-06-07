@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>介绍页</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">返回</span><span
+                                class="icon-bar"></span><span class="icon-bar"></span><span
+                                class="icon-bar"></span></button> <a class="navbar-brand"
+                            href="https://yanhun1234.github.io/works/Huadu/New-edition/travel/version/1.0/">返回</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
+
+                            </ul>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <h1 class="text-center" id='text-a'></h1>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <p class="lead" id='b'></p>
+            </div>
+        </div>
+        <script>
+            const text = {
+                '1': {
+                    id: 1,
+                    text1: `
+                    花都湖
+                    `,
+                    text2: `
+                    花都湖原名新街河公园，《关于加快新街河公园建设》是区十五届人大一次会议提出的议案，建设新街河公园（即花都湖）是提升城市环境和人民群众生活质量的一件大事。花都区人大常委会多次组织市、区人大代表开展调研、视察活动，多次听取区政府关于新街河公园建设情况汇报，花都区政府高度重视该议案的办理，积极推进新街河公园（即花都湖）工程建设，计划用2年的时间建成并投入使用。
+花都湖东起铁山河河口，西至京广铁路桥段，全长约6.68公里，占地总面积约2.83平方公里，预计投资5亿7千多万元。花都湖建成后，将发挥出城市生态环境治理的综合功能，既有调蓄雨洪、抗旱排涝的环境效益，同时也具有很高的社会效益和经济效益。花都湖公园在设计上充分体现亲水性，利用山水资源，以绿化为主，形成防洪与城市景观互为联动的亲水型生态长廊，建成后将成为我区“一河两岸”的亮丽风景线。此外，公园设计力求保留历史特色风貌，并融入本土文化元素，着力打造集自然保育、旅游、教育和市民休闲娱乐等功能于一体的城市滨河公园，将成为展示花都区人与水和谐相处，水与城相得益彰的文化窗口。
+                    `
+                },
+                '2': {
+                    id: 2,
+                    text1: `
+                    花都融创乐园
+                    `,
+                    text2: `
+                    广州融创乐园位于广州市花都区广州融创文旅城，拥有八大业态。其中，广州融创乐园拥有6大主题园区，31台游乐设施和12项演艺项目；广州融创雪世界拥有四条不同难度滑雪道和娱雪区，能同时满足娱乐和运动两种需求；广州融创水世界四季恒温，以“海上丝路”为设计主题，内设三大主题区；广州融创体育世界拥有5大功能区，23个娱乐项目。周边配套有融创茂商业中心、星级酒店群、滨湖酒吧街及大剧院，打造一站式生活娱乐中心。
+                    `
+                },
+                '3': {
+                    id: 3,
+                    text1: `
+                    花都芙蓉旅游度假区
+                    `,
+                    text2: `
+                    广州市花都芙蓉省级旅游度假区是广州北郊著名的旅游胜地。位于花都区北部芙蓉镇的芙蓉峰及芙蓉水库一带，距离广州市中心区仅45分钟车程，交通便捷。该旅游区占地面积36平方公里。芙蓉山旧称芙蓉嶂，层峦叠翠，象莲花瓣瓣，山势一字排开，宛若屏嶂。区内群山透迤，松林迭翠，飞瀑流泉与湖光山色交相辉映，山顶负离子6000个/MM3，自然风光优美怡人。
+度假区内有远近闻名的龙王庙、洪秀全祖墓、陈济棠母墓等人文史迹。拥有落差90米的芙蓉飞瀑、由海拨 581米的“王子山”、天子山．芙蓉峰三大山脉组合，通天河引水隧道自然景点；有万人天然游泳池、芙蓉水上娱乐世界、花都芙蓉峡漂流场、野战俱乐部等项目；各种球类运动场、卡拉OK厅、烧烤场等设施，芙蓉峰修建的山顶公园正待完善包装这中。此外,区内还建有一批风格各异的宾馆、酒楼、为游客提供住、食、行、购等配套服务，并可为单位社团提供多个大中型会议中心。在这里，无论是工作开会或是休闲疗养，您都可享受到热情而周到的服务。度假区内有50多家度假山庄，开设有旅业、饮食、购物、娱乐、会议中心等项目，众多的旅游景点分布在区内。全区总体规划60平方公里，已开发18.8平方公里，其中湖水面积3平方公里。1994年被评为省级旅游度假区。
+                    `
+                },
+                '4': {
+                    id: 4,
+                    text1: `
+                    花都石头记矿物园
+                    `,
+                    text2: `
+                    花都石头记矿物园，于2009年8月开园，位于广州市花都区珠宝城，园区占地面积70亩，主建筑面积17777平方米，地上石雕公园，地下奇石世界。石头记矿物园，地上芝麻开门，地下神秘宝藏，以奇石、化石、宝石为主题，集科普教育、休闲购物、观光旅游为一体，是世界首座以宝石矿物为主题的游乐园，和动物园、植物园对比，焦点突出，自成风格。矿物园展出各类矿物品种超过2000种，数量达近万件之多。
+石头记矿物园位于广州市花都区。石头记矿物园，以奇石、化石、宝石为主题的广东省科普中心。矿物园展出各类矿物品种超过2000种，数量达近万件之多。
+                    `
+                },
+                '5': {
+                    id: 5,
+                    text1: `
+                    湿地公园
+                    `,
+                    text2: `
+                    湿地公园（Wetland Park）是指天然或人工形成，具有湿地生态功能和典型特征，以生态保护、科普教育和休闲游憩为主要内容的公园。以湿地良好生态环境和多样化湿地景观资源为基础，以湿地的科普宣教、湿地功能利用、弘扬湿地文化等为主题，并建有一定规模的旅游休闲设施，可供人们旅游观光、休闲娱乐的生态型主题公园。
+湿地公园具有湿地保护与利用、科普教育、湿地研究、生态观光、休闲娱乐等多种功能，是国家湿地保护体系的重要组成部分，与湿地自然保护区、保护小区、湿地野生动植物保护栖息地以及湿地多用途管理区等共同构成了湿地保护管理体系。发展建设湿地公园是落实国家湿地分级分类保护管理策略的一项具体措施，也是当前形势下维护和扩大湿地保护面积直接而行之有效的途径之一。发展建设湿地公园，既有利于调动社会力量参与湿地保护与可持续利用，又有利于充分发挥湿地多种功能效益，同时满足公众需求和社会经济发展的要求，通过社会的参与和科学的经营管理，达到保护湿地生态系统、维持湿地多种效益持续发挥的目标。对改善区域生态状况，促进经济社会可持续发展，实现人与自然和谐共处都具有十分重要的意义。
+截止到2017年底，全国共建立湿地公园1699处，其中国家湿地公园898处
+                    `
+                }
+            }
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) { return pair[1]; }
+                }
+                return (false);
+            }
+            function main() {
+                console.log(getQueryVariable('id'))
+                if (getQueryVariable('id') == text[getQueryVariable('id')].id) {
+                    document.getElementById("text-a").innerHTML = `${text[getQueryVariable('id')].text1} 介绍`
+                    document.getElementById("b").innerHTML = text[getQueryVariable('id')].text2
+                }
+            }
+            main()
+        </script>
+    </div>
+</body>
+
+</html>
